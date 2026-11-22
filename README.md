@@ -1,5 +1,6 @@
 # Gustavo-Portilla-M-ndez
 STEAM Project - My OWN Page
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -130,7 +131,7 @@ STEAM Project - My OWN Page
       margin-top: 22px;
     }
 
-    /* BREADCRUMB (MIGA DE PAN) */
+    /* BREADCRUMB */
     .breadcrumb {
       font-size: 11px;
       color: var(--gris);
@@ -144,7 +145,7 @@ STEAM Project - My OWN Page
       text-decoration: underline;
     }
 
-    /* AVISO DESTACADO (CAJA VERDE PÁLIDO) */
+    /* AVISO DESTACADO */
     .banner-aviso {
       background: var(--verde-claro);
       border-radius: 8px;
@@ -229,7 +230,7 @@ STEAM Project - My OWN Page
     nav {
       display: flex;
       align-items: center;
-      gap: 26px;
+      gap: 22px;
       font-size: 12.5px;
     }
 
@@ -317,7 +318,7 @@ STEAM Project - My OWN Page
       border-bottom-color: var(--verde);
     }
 
-    /* ===== SECCIÓN HERO / PORTADA CON IMAGEN ARCO ===== */
+    /* ===== SECCIÓN HERO ===== */
     .hero {
       padding: 60px 0 50px;
     }
@@ -415,7 +416,7 @@ STEAM Project - My OWN Page
       margin-top: 10px;
     }
 
-    /* ===== FRANJA DE PUNTOS CLAVE (INICIO) ===== */
+    /* ===== FRANJA DE PUNTOS CLAVE ===== */
     .franja-conecta {
       border-top: 1px solid var(--borde);
       border-bottom: 1px solid var(--borde);
@@ -692,6 +693,116 @@ STEAM Project - My OWN Page
       padding-left: 32px;
     }
 
+    /* ===== VISTA PREVIA TAREA 5: MI RUTA VOCACIONAL (SUPABASE AUTH) ===== */
+    .seccion-preview-funcion {
+      background: var(--verde-suave);
+      border-top: 1px solid var(--borde);
+      border-bottom: 1px solid var(--borde);
+      padding: 75px 0;
+    }
+
+    .badge-desarrollo {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #203d2f;
+      color: #ffffff;
+      font-size: 10px;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+
+    .badge-desarrollo::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #a8d5ba;
+    }
+
+    .preview-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 32px;
+      margin-top: 32px;
+      align-items: start;
+    }
+
+    .preview-card {
+      background: white;
+      border: 1px solid var(--borde);
+      border-radius: 12px;
+      padding: 28px;
+    }
+
+    .preview-card.dashed {
+      border: 1.5px dashed #8fa393;
+      background: #fcfdfb;
+    }
+
+    .auth-mockup-bar {
+      background: var(--verde-suave);
+      border: 1px solid var(--borde);
+      border-radius: 8px;
+      padding: 12px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      font-size: 12px;
+    }
+
+    .chips-especialidad {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 6px;
+    }
+
+    .chip-esp {
+      background: white;
+      border: 1px solid var(--borde);
+      padding: 7px 13px;
+      border-radius: 20px;
+      font-size: 12px;
+      color: var(--texto);
+      transition: 0.2s;
+    }
+
+    .chip-esp:hover {
+      border-color: var(--verde);
+    }
+
+    .chip-esp.activo {
+      background: var(--verde);
+      color: white;
+      border-color: var(--verde);
+      font-weight: bold;
+    }
+
+    .resumen-guardado-box {
+      background: var(--verde-suave);
+      border-radius: 8px;
+      padding: 18px;
+      margin-top: 16px;
+      border-left: 3px solid var(--verde);
+    }
+
+    .aviso-no-persiste {
+      margin-top: 16px;
+      padding: 10px 14px;
+      background: #f3f5f0;
+      border-radius: 6px;
+      font-size: 11px;
+      color: var(--gris);
+    }
+
     /* ===== ACORDEÓN (SEMESTRES Y PREGUNTAS FRECUENTES) ===== */
     .recorrido-grid {
       display: grid;
@@ -889,7 +1000,7 @@ STEAM Project - My OWN Page
       color: var(--texto);
     }
 
-    /* ===== DOCENTES (NOSOTROS) ===== */
+    /* ===== DOCENTES ===== */
     .seccion-verde-claro {
       background: var(--verde-claro);
       padding: 75px 0;
@@ -936,7 +1047,7 @@ STEAM Project - My OWN Page
       font-size: 12px;
     }
 
-    /* ===== FORMULARIOS (INSCRIBIRME, FOLLETO, ACCESIBILIDAD) ===== */
+    /* ===== FORMULARIOS ===== */
     .pasos-barra {
       background: var(--verde-suave);
       border: 1px solid var(--borde);
@@ -1055,7 +1166,7 @@ STEAM Project - My OWN Page
     }
 
     .campo textarea {
-      min-height: 110px;
+      min-height: 95px;
       resize: vertical;
     }
 
@@ -1228,7 +1339,7 @@ STEAM Project - My OWN Page
       font-size: 13px;
     }
 
-    /* ===== ACCESIBILIDAD ESPECÍFICO ===== */
+    /* ===== ACCESIBILIDAD ===== */
     .selector-contraste {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -1310,7 +1421,7 @@ STEAM Project - My OWN Page
       color: var(--texto);
     }
 
-    /* ===== CTA FINAL (VERDE CLARO) ===== */
+    /* ===== CTA FINAL ===== */
     .cta-final {
       background: var(--verde-claro);
       padding: 75px 0;
@@ -1404,6 +1515,7 @@ STEAM Project - My OWN Page
       .dos-col-equilibrado,
       .legal-grid,
       .faq-bloque,
+      .preview-grid,
       .cta-grid {
         grid-template-columns: 1fr;
         gap: 32px;
@@ -1489,6 +1601,7 @@ STEAM Project - My OWN Page
         <a href="#programa" id="nav-programa" onclick="mostrarVista('programa', event)">Conoce el programa</a>
         <a href="#especialidades" id="nav-especialidades" onclick="mostrarVista('especialidades', event)">Especialidades</a>
         <a href="#nosotros" id="nav-nosotros" onclick="mostrarVista('nosotros', event)">Nosotros</a>
+        <a href="#mi-ruta-preview" onclick="irAMiRuta(event)">Mi ruta</a>
         <a href="#inscribirme" id="nav-inscribirme" class="btn-nav" onclick="mostrarVista('inscribirme', event)">Inscribirme</a>
       </nav>
     </div>
@@ -1705,6 +1818,114 @@ STEAM Project - My OWN Page
           <div style="margin-top: 24px; display: flex; gap: 22px; flex-wrap: wrap;">
             <a href="#nosotros" class="enlace-flecha" onclick="mostrarVista('nosotros', event)">Conoce a Savia ↗</a>
             <a href="#solicitar-info" class="enlace-flecha" onclick="mostrarVista('solicitar-info', event)">Solicitar folleto ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         VISTA PREVIA TAREA 5: MI RUTA VOCACIONAL (FUNCIÓN EN DESARROLLO)
+         ========================================================= -->
+    <section class="seccion-preview-funcion" id="mi-ruta-preview">
+      <div class="contenedor">
+        <span class="badge-desarrollo">Función en desarrollo · Vista previa (Próxima etapa)</span>
+        <h2>Mi ruta vocacional y orientación</h2>
+        <p class="descripcion">
+          En la siguiente etapa del proyecto podrás crear tu cuenta con <strong>Supabase Auth</strong> para guardar
+          tu especialidad favorita, conservar tus dudas sobre la carrera y dar seguimiento a tu proceso de orientación.
+        </p>
+
+        <div class="preview-grid">
+          <!-- Tarjeta izquierda: Interfaz prevista -->
+          <div class="preview-card">
+            <div class="auth-mockup-bar">
+              <div>
+                <strong>Acceso de aspirante (Supabase Auth)</strong>
+                <span style="display:block; font-size:11px; color:var(--gris);">Inicia sesión con tu correo para conservar tu selección</span>
+              </div>
+              <span style="font-size:11px; background:white; padding:5px 10px; border-radius:6px; border:1px solid var(--borde);">
+                Estado: Vista previa
+              </span>
+            </div>
+
+            <div class="campo">
+              <label for="prev-nombre">Nombre completo *</label>
+              <input type="text" id="prev-nombre" placeholder="Ej. Mariana Soto" oninput="actualizarVistaPrevia()">
+            </div>
+
+            <div class="campo">
+              <label for="prev-correo">Correo electrónico *</label>
+              <input type="email" id="prev-correo" placeholder="aspirante@ejemplo.com" oninput="actualizarVistaPrevia()">
+            </div>
+
+            <div class="campo">
+              <label>Especialidad favorita *</label>
+              <div class="chips-especialidad">
+                <button type="button" class="chip-esp activo" onclick="elegirEspecialidadPreview('Clínica', this)">♡ Clínica</button>
+                <button type="button" class="chip-esp" onclick="elegirEspecialidadPreview('Educativa', this)">📖 Educativa</button>
+                <button type="button" class="chip-esp" onclick="elegirEspecialidadPreview('Organizacional', this)">⌘ Organizacional</button>
+                <button type="button" class="chip-esp" onclick="elegirEspecialidadPreview('Social', this)">○ Social</button>
+                <button type="button" class="chip-esp" onclick="elegirEspecialidadPreview('Neuropsicología', this)">🧠 Neuropsicología</button>
+                <button type="button" class="chip-esp" onclick="elegirEspecialidadPreview('Del desarrollo', this)">🌿 Del desarrollo</button>
+              </div>
+            </div>
+
+            <div class="fila-2">
+              <div class="campo">
+                <label for="prev-modalidad">Modalidad preferida (opcional)</label>
+                <select id="prev-modalidad" onchange="actualizarVistaPrevia()">
+                  <option value="Presencial">Presencial</option>
+                  <option value="Híbrida">Híbrida</option>
+                </select>
+              </div>
+
+              <div class="campo">
+                <label for="prev-nota">Pregunta o nota (opcional)</label>
+                <input type="text" id="prev-nota" placeholder="Ej. Dudas sobre prácticas en 7.º semestre" oninput="actualizarVistaPrevia()">
+              </div>
+            </div>
+
+            <button type="button" class="boton" onclick="simularVistaPrevia()">
+              Previsualizar mi selección (Función en desarrollo)
+            </button>
+
+            <div class="aviso-no-persiste">
+              <strong>Nota académica:</strong> Esta sección es una vista previa visual. Todavía no crea cuentas reales ni almacena datos en una base de datos.
+            </div>
+          </div>
+
+          <!-- Tarjeta derecha: Cómo se verá la respuesta guardada -->
+          <div class="preview-card dashed">
+            <p class="etiqueta" style="margin-bottom:8px;">Así se verá tu panel guardado</p>
+            <h3 style="font-size:22px; margin-bottom:10px;">Resumen de tu interés</h3>
+            <p style="font-size:12px; color:var(--gris);">
+              Cuando se conecte la persistencia de datos, podrás consultar y actualizar esta ficha cada vez que regreses a Savia:
+            </p>
+
+            <div class="resumen-guardado-box">
+              <p style="font-size:11px; color:#627851; font-weight:bold; text-transform:uppercase; letter-spacing:1px;">
+                Ficha de aspirante (Muestra)
+              </p>
+              <p style="font-size:13px; margin-top:8px;">
+                <strong>Aspirante:</strong> <span id="out-nombre">Sin especificar</span>
+              </p>
+              <p style="font-size:13px; margin-top:4px;">
+                <strong>Correo vinculado:</strong> <span id="out-correo">aspirante@ejemplo.com</span>
+              </p>
+              <p style="font-size:13px; margin-top:4px;">
+                <strong>Especialidad favorita:</strong> <span id="out-esp">Clínica</span>
+              </p>
+              <p style="font-size:13px; margin-top:4px;">
+                <strong>Modalidad:</strong> <span id="out-mod">Presencial</span>
+              </p>
+              <p style="font-size:13px; margin-top:4px;">
+                <strong>Nota guardada:</strong> <span id="out-nota">Ninguna nota agregada</span>
+              </p>
+            </div>
+
+            <div id="feedback-preview" class="mensaje-exito" style="margin-top:14px;">
+              ✓ Vista previa actualizada en pantalla. Al recargar la página estos datos se borrarán porque la base de datos aún está en desarrollo.
+            </div>
           </div>
         </div>
       </div>
@@ -2103,7 +2324,13 @@ STEAM Project - My OWN Page
           en distintos contextos desde una formación científica y ética común.
         </p>
 
-        <div class="areas-grid" style="margin-top: 40px;">
+        <div style="margin-top: 20px;">
+          <a href="#mi-ruta-preview" class="enlace-flecha" onclick="irAMiRuta(event)">
+            Guardar mi especialidad favorita (Vista previa) ↗
+          </a>
+        </div>
+
+        <div class="areas-grid" style="margin-top: 32px;">
           <article class="tarjeta-area">
             <div>
               <div class="tarjeta-area-top"><div class="caja-icono">♡</div></div>
@@ -2607,7 +2834,6 @@ STEAM Project - My OWN Page
           acompañarte antes de dar el siguiente paso.
         </p>
 
-        <!-- Botones de categoría -->
         <div class="faq-tabs">
           <button type="button" class="faq-tab activa" onclick="filtrarFaq('todas', this)">Admisiones</button>
           <button type="button" class="faq-tab" onclick="filtrarFaq('requisitos', this)">Requisitos académicos</button>
@@ -2618,7 +2844,6 @@ STEAM Project - My OWN Page
           Todas las categorías se presentan a continuación. Haz clic en cada pregunta para abrir o cerrar su respuesta.
         </p>
 
-        <!-- Categoría 1: Admisiones -->
         <div class="faq-bloque" data-cat="admisiones">
           <div>
             <h3>Admisiones</h3>
@@ -2658,7 +2883,6 @@ STEAM Project - My OWN Page
           </div>
         </div>
 
-        <!-- Categoría 2: Requisitos académicos -->
         <div class="faq-bloque" data-cat="requisitos">
           <div>
             <h3>Requisitos académicos</h3>
@@ -2698,7 +2922,6 @@ STEAM Project - My OWN Page
           </div>
         </div>
 
-        <!-- Categoría 3: Becas y colegiaturas -->
         <div class="faq-bloque" data-cat="becas">
           <div>
             <h3>Becas y colegiaturas</h3>
@@ -2738,7 +2961,6 @@ STEAM Project - My OWN Page
           </div>
         </div>
 
-        <!-- Categoría 4: Soporte técnico -->
         <div class="faq-bloque" data-cat="soporte">
           <div>
             <h3>Soporte técnico</h3>
@@ -2780,7 +3002,6 @@ STEAM Project - My OWN Page
       </div>
     </section>
 
-    <!-- Franja contacto asesor -->
     <section class="cta-final">
       <div class="contenedor cta-grid">
         <div>
@@ -2824,7 +3045,6 @@ STEAM Project - My OWN Page
         </p>
 
         <div class="dos-col-equilibrado" style="margin-top: 42px;">
-          <!-- Columna izquierda -->
           <div>
             <h2 style="font-size: 28px; margin-bottom: 26px;">Una formación que empieza por comprender.</h2>
 
@@ -2868,7 +3088,6 @@ STEAM Project - My OWN Page
             </p>
           </div>
 
-          <!-- Columna derecha: Formulario Recibe el folleto -->
           <form class="formulario-caja" onsubmit="mostrarMensajeExito(event, 'exito-folleto')">
             <p class="etiqueta" style="margin-bottom: 6px;">Conversemos sobre tu futuro</p>
             <h3 style="font-size: 26px; margin-bottom: 8px;">Recibe el folleto</h3>
@@ -3105,7 +3324,6 @@ STEAM Project - My OWN Page
           <p>Esta declaración describe comportamientos previstos para la implementación. No afirma conformidad alcanzada ni certificación. Los controles y formularios de esta vista son ilustrativos y no ejecutan acciones.</p>
         </div>
 
-        <!-- Nuestro punto de partida + Contraste -->
         <div class="dos-col-equilibrado" style="margin-bottom: 50px;">
           <div>
             <p class="etiqueta">Nuestro punto de partida</p>
@@ -3143,7 +3361,6 @@ STEAM Project - My OWN Page
           </div>
         </div>
 
-        <!-- Una ruta clara, también con el teclado -->
         <div style="border-top: 1px solid var(--borde); padding-top: 45px;">
           <h2 style="font-size: 28px;">Una ruta clara, también con el teclado.</h2>
           <p class="descripcion">
@@ -3206,7 +3423,6 @@ STEAM Project - My OWN Page
       </div>
     </section>
 
-    <!-- Sección Tu experiencia nos orienta -->
     <section class="seccion-verde-claro">
       <div class="contenedor dos-col-equilibrado">
         <div>
@@ -3324,8 +3540,10 @@ STEAM Project - My OWN Page
     </div>
   </footer>
 
-  <!-- JAVASCRIPT PARA NAVEGACIÓN, ACORDEÓN, FAQ Y ACCESIBILIDAD -->
+  <!-- JAVASCRIPT -->
   <script>
+    let especialidadSeleccionada = 'Clínica';
+
     function mostrarVista(nombreVista, evento) {
       if (evento) evento.preventDefault();
 
@@ -3341,6 +3559,40 @@ STEAM Project - My OWN Page
       }
 
       window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function irAMiRuta(evento) {
+      if (evento) evento.preventDefault();
+      mostrarVista('inicio', null);
+      setTimeout(() => {
+        const seccion = document.getElementById('mi-ruta-preview');
+        if (seccion) seccion.scrollIntoView({ behavior: 'smooth' });
+      }, 60);
+    }
+
+    function elegirEspecialidadPreview(nombreEsp, boton) {
+      especialidadSeleccionada = nombreEsp;
+      document.querySelectorAll('.chip-esp').forEach(c => c.classList.remove('activo'));
+      boton.classList.add('activo');
+      actualizarVistaPrevia();
+    }
+
+    function actualizarVistaPrevia() {
+      const nombre = document.getElementById('prev-nombre').value.trim();
+      const correo = document.getElementById('prev-correo').value.trim();
+      const modalidad = document.getElementById('prev-modalidad').value;
+      const nota = document.getElementById('prev-nota').value.trim();
+
+      document.getElementById('out-nombre').textContent = nombre || 'Sin especificar';
+      document.getElementById('out-correo').textContent = correo || 'aspirante@ejemplo.com';
+      document.getElementById('out-esp').textContent = especialidadSeleccionada;
+      document.getElementById('out-mod').textContent = modalidad;
+      document.getElementById('out-nota').textContent = nota || 'Ninguna nota agregada';
+    }
+
+    function simularVistaPrevia() {
+      actualizarVistaPrevia();
+      document.getElementById('feedback-preview').style.display = 'block';
     }
 
     function toggleAcordeon(boton) {
